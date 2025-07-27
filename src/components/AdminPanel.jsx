@@ -128,78 +128,78 @@ function AdminPanel({ bookings, onClose, onUpdateBooking, onDeleteBooking }) {
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-2 sm:p-4 z-50">
       <div className="bg-white rounded-3xl shadow-2xl w-full max-w-7xl max-h-[90vh] overflow-hidden">
         {/* Header */}
-        <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-4 sm:p-6 md:p-8">
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-4 sm:space-y-0">
-            <div className="flex items-center space-x-3 sm:space-x-4">
-              <div className="p-2 sm:p-3 bg-white/20 rounded-xl">
-                <Users className="h-6 w-6 sm:h-8 sm:w-8" />
+        <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-2 sm:p-3 md:p-4">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-2 sm:space-y-0">
+            <div className="flex items-center space-x-2 sm:space-x-3">
+              <div className="p-1 sm:p-2 bg-white/20 rounded-xl">
+                <Users className="h-5 w-5 sm:h-6 sm:w-6" />
               </div>
               <div>
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold">Admin Panel</h2>
-                <p className="text-indigo-100 text-sm sm:text-base">Manage all exhibition bookings</p>
+                <h2 className="text-lg sm:text-xl md:text-2xl font-bold">Admin Panel</h2>
+                <p className="text-indigo-100 text-xs sm:text-sm">Manage all exhibition bookings</p>
               </div>
             </div>
             <button
               onClick={onClose}
-              className="p-2 sm:p-3 bg-white/20 hover:bg-white/30 rounded-xl transition-all duration-300"
+              className="p-1 sm:p-2 bg-white/20 hover:bg-white/30 rounded-xl transition-all duration-300"
             >
-              <X className="h-5 w-5 sm:h-6 sm:w-6" />
+              <X className="h-4 w-4 sm:h-5 sm:w-5" />
             </button>
           </div>
         </div>
 
         {/* Content */}
-        <div className="p-4 sm:p-6 md:p-8 overflow-y-auto max-h-[calc(90vh-120px)]">
+        <div className="p-2 sm:p-3 md:p-4 overflow-y-auto max-h-[calc(90vh-120px)]">
           {/* Stats Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-6 sm:mb-8">
-            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-4 sm:p-6 border border-blue-200">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3 mb-3 sm:mb-4">
+            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-2 sm:p-3 border border-blue-200">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm sm:text-base font-semibold text-gray-600">Total Bookings</p>
-                  <p className="text-2xl sm:text-3xl font-bold text-gray-900">{bookings.length}</p>
+                  <p className="text-xs sm:text-sm font-semibold text-gray-600">Total Bookings</p>
+                  <p className="text-lg sm:text-xl font-bold text-gray-900">{bookings.length}</p>
                 </div>
-                <div className="p-3 bg-blue-500 rounded-xl">
-                  <Calendar className="h-6 w-6 text-white" />
+                <div className="p-2 bg-blue-500 rounded-xl">
+                  <Calendar className="h-5 w-5 text-white" />
                 </div>
               </div>
             </div>
             
-            <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-4 sm:p-6 border border-green-200">
+            <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-2 sm:p-3 border border-green-200">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm sm:text-base font-semibold text-gray-600">Confirmed</p>
-                  <p className="text-2xl sm:text-3xl font-bold text-gray-900">
+                  <p className="text-xs sm:text-sm font-semibold text-gray-600">Confirmed</p>
+                  <p className="text-lg sm:text-xl font-bold text-gray-900">
                     {bookings.filter(b => b.status === 'confirmed').length}
                   </p>
                 </div>
-                <div className="p-3 bg-green-500 rounded-xl">
-                  <CheckCircle className="h-6 w-6 text-white" />
+                <div className="p-2 bg-green-500 rounded-xl">
+                  <CheckCircle className="h-5 w-5 text-white" />
                 </div>
               </div>
             </div>
             
-            <div className="bg-gradient-to-r from-yellow-50 to-amber-50 rounded-2xl p-4 sm:p-6 border border-yellow-200">
+            <div className="bg-gradient-to-r from-yellow-50 to-amber-50 rounded-2xl p-2 sm:p-3 border border-yellow-200">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm sm:text-base font-semibold text-gray-600">Total Booths</p>
-                  <p className="text-2xl sm:text-3xl font-bold text-gray-900">{totalBooths}</p>
+                  <p className="text-xs sm:text-sm font-semibold text-gray-600">Total Booths</p>
+                  <p className="text-lg sm:text-xl font-bold text-gray-900">{totalBooths}</p>
                 </div>
-                <div className="p-3 bg-yellow-500 rounded-xl">
-                  <Package className="h-6 w-6 text-white" />
+                <div className="p-2 bg-yellow-500 rounded-xl">
+                  <Package className="h-5 w-5 text-white" />
                 </div>
               </div>
             </div>
             
-            <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-4 sm:p-6 border border-purple-200">
+            <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-2 sm:p-3 border border-purple-200">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm sm:text-base font-semibold text-gray-600">Total Revenue</p>
-                  <p className="text-2xl sm:text-3xl font-bold text-gray-900">
+                  <p className="text-xs sm:text-sm font-semibold text-gray-600">Total Revenue</p>
+                  <p className="text-lg sm:text-xl font-bold text-gray-900">
                     ${totalRevenue.toLocaleString()}
                   </p>
                 </div>
-                <div className="p-3 bg-purple-500 rounded-xl">
-                  <DollarSign className="h-6 w-6 text-white" />
+                <div className="p-2 bg-purple-500 rounded-xl">
+                  <DollarSign className="h-5 w-5 text-white" />
                 </div>
               </div>
             </div>

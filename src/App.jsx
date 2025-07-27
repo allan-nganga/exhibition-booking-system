@@ -167,23 +167,23 @@ function App() {
           {/* Main Background Card */}
           <div className="main-background-card w-full h-full flex flex-col">
             {/* Header */}
-            <header className="glass-effect sticky top-0 z-40 border-b border-white/30 mb-4 sm:mb-6 md:mb-8 flex-shrink-0">
-              <div className="px-3 py-4 sm:px-6 md:px-12 lg:px-16 md:py-8">
+            <header className="glass-effect sticky top-0 z-40 border-b border-white/30 mb-2 sm:mb-3 md:mb-4 flex-shrink-0">
+              <div className="px-2 py-2 sm:px-3 md:px-6 lg:px-8 md:py-4">
                 <div className="flex flex-col sm:flex-row justify-between items-center space-y-3 sm:space-y-0">
                   <div className="flex items-center space-x-2 sm:space-x-4">
                     <div className="icon-container">
-                      <Building2 className="h-5 w-5 sm:h-6 sm:w-6 md:h-8 md:w-8 text-white" />
+                      <Building2 className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-white" />
                     </div>
                     <div>
-                      <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900">Exhibition Booking System</h1>
-                      <p className="text-xs sm:text-sm md:text-base text-gray-600 font-medium">Professional Booth Management</p>
+                      <h1 className="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-900">Exhibition Booking System</h1>
+                      <p className="text-xs sm:text-xs md:text-sm text-gray-600 font-medium">Professional Booth Management</p>
                     </div>
                   </div>
                   <button
                     onClick={() => setShowAdminPanel(!showAdminPanel)}
                     className="btn-secondary flex items-center space-x-2 text-xs sm:text-sm md:text-base px-3 py-2 sm:px-4 sm:py-3"
                   >
-                    <Users className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5" />
+                    <Users className="h-3 w-3 sm:h-4 sm:w-4 md:h-4 md:w-4" />
                     <span>Admin Panel</span>
                   </button>
                 </div>
@@ -191,33 +191,33 @@ function App() {
             </header>
 
             {/* Main Content */}
-            <div className="px-3 py-4 sm:px-6 md:px-12 lg:px-16 md:py-8 lg:py-12 flex-1 overflow-y-auto">
-              <main className="space-y-4 sm:space-y-6 md:space-y-8 lg:space-y-12">
+            <div className="px-2 py-2 sm:px-3 md:px-6 lg:px-8 md:py-4 lg:py-6 flex-1 overflow-y-auto">
+              <main className="space-y-2 sm:space-y-3 md:space-y-4 lg:space-y-6">
                 {/* Hero Section Card */}
                 <div className="floating-card">
-                  <div className="px-4 py-6 sm:px-6 md:px-12 lg:px-16 md:py-8 lg:py-12 w-[95%] h-[95%] mx-auto">
+                  <div className="px-2 py-3 sm:px-3 md:px-6 lg:px-8 md:py-4 lg:py-6 w-[95%] h-[95%] mx-auto">
                     <div className="text-center h-full flex flex-col justify-center">
-                      <div className="relative mb-4 sm:mb-6 md:mb-8">
-                        <div className="flex justify-center mb-4 sm:mb-6">
-                          <div className="icon-container p-3 sm:p-4 md:p-6 lg:p-8">
-                            <Calendar className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-16 lg:w-16 text-white" />
+                      <div className="relative mb-2 sm:mb-3 md:mb-4">
+                        <div className="flex justify-center mb-2 sm:mb-3">
+                          <div className="icon-container p-2 sm:p-3 md:p-4 lg:p-5">
+                            <Calendar className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-white" />
                           </div>
                         </div>
                         <div className="absolute -top-1 -right-1 sm:-top-2 sm:-right-2 md:-top-3 md:-right-3">
-                          <Sparkles className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 text-yellow-500 animate-pulse" />
+                          <Sparkles className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 lg:h-6 lg:w-6 text-yellow-500 animate-pulse" />
                         </div>
                       </div>
-                      <div className="space-y-3 sm:space-y-4 md:space-y-6">
-                        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
+                      <div className="space-y-2 sm:space-y-3 md:space-y-4">
+                        <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-900 leading-tight">
                           Book Your Exhibition Booth
                         </h2>
-                        <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-600 leading-relaxed font-medium max-w-4xl mx-auto px-2">
+                        <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-gray-600 leading-relaxed font-medium max-w-4xl mx-auto px-2">
                           Secure your premium space at our upcoming exhibition. Choose from our exclusive booth options 
                           and get the perfect location for your business to shine.
                         </p>
-                        <div className="flex justify-center mt-4 sm:mt-6">
+                        <div className="flex justify-center mt-2 sm:mt-3">
                           <div className="inline-flex items-center space-x-2 sm:space-x-3 bg-gradient-to-r from-indigo-100 to-purple-100 px-3 py-2 sm:px-4 sm:py-3 rounded-full border border-indigo-200 text-xs sm:text-sm md:text-base">
-                            <Award className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 lg:h-6 lg:w-6 text-indigo-600" />
+                            <Award className="h-3 w-3 sm:h-4 sm:w-4 md:h-4 md:w-4 lg:h-5 lg:w-5 text-indigo-600" />
                             <span className="font-semibold text-indigo-700">Professional Exhibition Management</span>
                           </div>
                         </div>
@@ -228,52 +228,52 @@ function App() {
 
                 {/* Exhibition Statistics Card */}
                 <div className="floating-card">
-                  <div className="px-4 py-6 sm:px-6 md:px-12 lg:px-16 md:py-8 lg:py-12 w-[95%] h-[95%] mx-auto">
-                    <div className="mb-4 sm:mb-6 md:mb-8">
-                      <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 flex items-center justify-center">
-                        <TrendingUp className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 mr-2 sm:mr-3 text-indigo-600" />
+                  <div className="px-2 py-3 sm:px-3 md:px-6 lg:px-8 md:py-4 lg:py-6 w-[95%] h-[95%] mx-auto">
+                    <div className="mb-2 sm:mb-3 md:mb-4">
+                      <h3 className="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-2 sm:mb-3 flex items-center justify-center">
+                        <TrendingUp className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-7 lg:w-7 mr-2 sm:mr-3 text-indigo-600" />
                         Exhibition Statistics
                       </h3>
-                      <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed text-center">Current booking overview and system performance</p>
+                      <p className="text-gray-600 text-xs sm:text-sm md:text-base leading-relaxed text-center">Current booking overview and system performance</p>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 h-[85%]">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3 md:gap-4 h-[85%]">
                       <div className="stats-card">
-                        <div className="flex items-center justify-center mb-3 sm:mb-4 md:mb-6">
-                          <div className="icon-container p-2 sm:p-3 md:p-4">
-                            <Calendar className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 text-white" />
+                        <div className="flex items-center justify-center mb-2 sm:mb-3 md:mb-4">
+                          <div className="icon-container p-1 sm:p-2 md:p-2">
+                            <Calendar className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
                           </div>
                         </div>
                         <div className="text-center">
-                          <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-2 sm:mb-3">{bookings.length}</div>
-                          <div className="text-sm sm:text-base md:text-lg font-semibold text-gray-600">Total Bookings</div>
+                          <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">{bookings.length}</div>
+                          <div className="text-xs sm:text-sm md:text-base font-semibold text-gray-600">Total Bookings</div>
                         </div>
                       </div>
                       
                       <div className="stats-card">
-                        <div className="flex items-center justify-center mb-3 sm:mb-4 md:mb-6">
-                          <div className="icon-container p-2 sm:p-3 md:p-4">
-                            <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 text-white" />
+                        <div className="flex items-center justify-center mb-2 sm:mb-3 md:mb-4">
+                          <div className="icon-container p-1 sm:p-2 md:p-2">
+                            <CheckCircle className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
                           </div>
                         </div>
                         <div className="text-center">
-                          <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-2 sm:mb-3">
+                          <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">
                             {bookings.filter(b => b.status === 'confirmed').length}
                           </div>
-                          <div className="text-sm sm:text-base md:text-lg font-semibold text-gray-600">Confirmed</div>
+                          <div className="text-xs sm:text-sm md:text-base font-semibold text-gray-600">Confirmed</div>
                         </div>
                       </div>
                       
                       <div className="stats-card">
-                        <div className="flex items-center justify-center mb-3 sm:mb-4 md:mb-6">
-                          <div className="icon-container p-2 sm:p-3 md:p-4">
-                            <TrendingUp className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 text-white" />
+                        <div className="flex items-center justify-center mb-2 sm:mb-3 md:mb-4">
+                          <div className="icon-container p-1 sm:p-2 md:p-2">
+                            <TrendingUp className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
                           </div>
                         </div>
                         <div className="text-center">
-                          <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-2 sm:mb-3">
+                          <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">
                             {bookings.reduce((sum, booking) => sum + booking.numberOfBooths, 0)}
                           </div>
-                          <div className="text-sm sm:text-base md:text-lg font-semibold text-gray-600">Total Booths</div>
+                          <div className="text-xs sm:text-sm md:text-base font-semibold text-gray-600">Total Booths</div>
                         </div>
                       </div>
                     </div>
@@ -282,13 +282,13 @@ function App() {
 
                 {/* Exhibition Booth Booking Card */}
                 <div className="floating-card">
-                  <div className="px-4 py-6 sm:px-6 md:px-12 lg:px-16 md:py-8 lg:py-12 w-[95%] h-[95%] mx-auto">
-                    <div className="mb-4 sm:mb-6 md:mb-8">
-                      <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 flex items-center justify-center">
-                        <Building2 className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 mr-2 sm:mr-3 text-indigo-600" />
+                  <div className="px-2 py-3 sm:px-3 md:px-6 lg:px-8 md:py-4 lg:py-6 w-[95%] h-[95%] mx-auto">
+                    <div className="mb-2 sm:mb-3 md:mb-4">
+                      <h3 className="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-2 sm:mb-3 flex items-center justify-center">
+                        <Building2 className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-7 lg:w-7 mr-2 sm:mr-3 text-indigo-600" />
                         Exhibition Booth Booking
                       </h3>
-                      <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed text-center">Complete your booth reservation with our comprehensive booking form</p>
+                      <p className="text-gray-600 text-xs sm:text-sm md:text-base leading-relaxed text-center">Complete your booth reservation with our comprehensive booking form</p>
                     </div>
                     <div className="h-[85%] overflow-y-auto">
                       <BookingForm onSubmit={handleBookingSubmit} />
@@ -298,26 +298,26 @@ function App() {
 
                 {/* Footer Card */}
                 <div className="floating-card">
-                  <div className="px-4 py-6 sm:px-6 md:px-12 lg:px-16 md:py-8 lg:py-12 w-[95%] h-[95%] mx-auto">
+                  <div className="px-2 py-3 sm:px-3 md:px-6 lg:px-8 md:py-4 lg:py-6 w-[95%] h-[95%] mx-auto">
                     <div className="text-center h-full flex flex-col justify-center">
-                      <div className="mb-4 sm:mb-6 md:mb-8">
-                        <div className="flex justify-center mb-4 sm:mb-6">
-                          <div className="icon-container p-3 sm:p-4 md:p-6 lg:p-8">
-                            <Sparkles className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-16 lg:w-16 text-white" />
+                      <div className="mb-2 sm:mb-3 md:mb-4">
+                        <div className="flex justify-center mb-2 sm:mb-3">
+                          <div className="icon-container p-2 sm:p-3 md:p-4 lg:p-5">
+                            <Sparkles className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-white" />
                           </div>
                         </div>
                       </div>
-                      <div className="space-y-3 sm:space-y-4 md:space-y-6">
-                        <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900">
+                      <div className="space-y-2 sm:space-y-3 md:space-y-4">
+                        <h3 className="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-900">
                           Ready to Showcase Your Business?
                         </h3>
-                        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 leading-relaxed font-medium max-w-3xl mx-auto px-2">
+                        <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-600 leading-relaxed font-medium max-w-3xl mx-auto px-2">
                           Join us at the most prestigious exhibition of the year. Secure your booth today and connect with industry leaders, 
                           potential clients, and business partners in a professional environment designed for success.
                         </p>
-                        <div className="flex justify-center mt-4 sm:mt-6">
+                        <div className="flex justify-center mt-2 sm:mt-3">
                           <div className="inline-flex items-center space-x-2 sm:space-x-3 bg-gradient-to-r from-green-100 to-emerald-100 px-3 py-2 sm:px-4 sm:py-3 rounded-full border border-green-200 text-xs sm:text-sm md:text-base">
-                            <Award className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 lg:h-6 lg:w-6 text-green-600" />
+                            <Award className="h-3 w-3 sm:h-4 sm:w-4 md:h-4 md:w-4 lg:h-5 lg:w-5 text-green-600" />
                             <span className="font-semibold text-green-700">Professional Exhibition Experience</span>
                           </div>
                         </div>

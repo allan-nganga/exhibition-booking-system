@@ -254,19 +254,19 @@ function BookingForm({ onSubmit }) {
   }
 
   return (
-    <form onSubmit={handleSubmit(handleFormSubmit)} className="space-y-4 sm:space-y-6 md:space-y-8 h-full flex flex-col">
+    <form onSubmit={handleSubmit(handleFormSubmit)} className="space-y-2 sm:space-y-3 md:space-y-4 h-full flex flex-col">
       {/* Company Information Section */}
-      <div className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl p-4 sm:p-6 md:p-8 lg:p-12 border border-indigo-200 flex-shrink-0">
-        <div className="mb-4 sm:mb-6 md:mb-8">
-          <h4 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-2 sm:mb-3 flex items-center">
-            <Building2 className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 mr-2 sm:mr-3 md:mr-4 text-indigo-600" />
+      <div className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl p-2 sm:p-3 md:p-4 lg:p-6 border border-indigo-200 flex-shrink-0">
+        <div className="mb-2 sm:mb-3 md:mb-4">
+          <h4 className="text-sm sm:text-lg md:text-xl font-bold text-gray-900 mb-1 sm:mb-2 flex items-center">
+            <Building2 className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 mr-2 sm:mr-3 md:mr-4 text-indigo-600" />
             Company Information
           </h4>
-          <p className="text-gray-600 text-xs sm:text-sm md:text-base leading-relaxed">Provide your company details for the booking</p>
+          <p className="text-gray-600 text-xs sm:text-xs md:text-sm leading-relaxed">Provide your company details for the booking</p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 sm:gap-3 md:gap-4">
           <div>
-            <label className="block text-xs sm:text-sm md:text-base font-semibold text-gray-700 mb-2 sm:mb-3 md:mb-4">
+            <label className="block text-xs sm:text-xs md:text-sm font-semibold text-gray-700 mb-1 sm:mb-2 md:mb-3">
               <Star className="inline h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2 text-red-500" />
               Company Name *
             </label>
@@ -283,7 +283,7 @@ function BookingForm({ onSubmit }) {
               }}
             />
             {errors.companyName && (
-              <p className="mt-1 sm:mt-2 md:mt-3 text-xs sm:text-sm text-red-600 flex items-center">
+              <p className="mt-1 sm:mt-1 md:mt-2 text-xs sm:text-xs text-red-600 flex items-center">
                 <span className="mr-1 sm:mr-2">⚠</span>
                 {errors.companyName.message}
               </p>
@@ -291,7 +291,7 @@ function BookingForm({ onSubmit }) {
             <p className="mt-1 text-xs text-gray-500">Enter 2-100 characters (letters, numbers, spaces allowed)</p>
           </div>
           <div>
-            <label className="block text-xs sm:text-sm md:text-base font-semibold text-gray-700 mb-2 sm:mb-3 md:mb-4">
+            <label className="block text-xs sm:text-xs md:text-sm font-semibold text-gray-700 mb-1 sm:mb-2 md:mb-3">
               <Star className="inline h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2 text-red-500" />
               Contact Person Name *
             </label>
@@ -308,7 +308,7 @@ function BookingForm({ onSubmit }) {
               }}
             />
             {errors.contactPersonName && (
-              <p className="mt-1 sm:mt-2 md:mt-3 text-xs sm:text-sm text-red-600 flex items-center">
+              <p className="mt-1 sm:mt-1 md:mt-2 text-xs sm:text-xs text-red-600 flex items-center">
                 <span className="mr-1 sm:mr-2">⚠</span>
                 {errors.contactPersonName.message}
               </p>
@@ -319,17 +319,17 @@ function BookingForm({ onSubmit }) {
       </div>
 
       {/* Contact Information Section */}
-      <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-4 sm:p-6 md:p-8 lg:p-12 border border-green-200 flex-shrink-0">
-        <div className="mb-4 sm:mb-6 md:mb-8">
-          <h4 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-2 sm:mb-3 flex items-center">
-            <Mail className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 mr-2 sm:mr-3 md:mr-4 text-green-600" />
+      <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-2 sm:p-3 md:p-4 lg:p-6 border border-green-200 flex-shrink-0">
+        <div className="mb-2 sm:mb-3 md:mb-4">
+          <h4 className="text-sm sm:text-lg md:text-xl font-bold text-gray-900 mb-1 sm:mb-2 flex items-center">
+            <Mail className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 mr-2 sm:mr-3 md:mr-4 text-green-600" />
             Contact Information
           </h4>
-          <p className="text-gray-600 text-xs sm:text-sm md:text-base leading-relaxed">How we can reach you for booking confirmation</p>
+          <p className="text-gray-600 text-xs sm:text-xs md:text-sm leading-relaxed">How we can reach you for booking confirmation</p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 sm:gap-3 md:gap-4">
           <div>
-            <label className="block text-xs sm:text-sm md:text-base font-semibold text-gray-700 mb-2 sm:mb-3 md:mb-4">
+            <label className="block text-xs sm:text-xs md:text-sm font-semibold text-gray-700 mb-1 sm:mb-2 md:mb-3">
               <Star className="inline h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2 text-red-500" />
               Email Address *
             </label>
@@ -346,7 +346,7 @@ function BookingForm({ onSubmit }) {
               }}
             />
             {errors.email && (
-              <p className="mt-1 sm:mt-2 md:mt-3 text-xs sm:text-sm text-red-600 flex items-center">
+              <p className="mt-1 sm:mt-1 md:mt-2 text-xs sm:text-xs text-red-600 flex items-center">
                 <span className="mr-1 sm:mr-2">⚠</span>
                 {errors.email.message}
               </p>
@@ -354,7 +354,7 @@ function BookingForm({ onSubmit }) {
             <p className="mt-1 text-xs text-gray-500">Enter a valid email address (e.g., user@example.com)</p>
           </div>
           <div>
-            <label className="block text-xs sm:text-sm md:text-base font-semibold text-gray-700 mb-2 sm:mb-3 md:mb-4">
+            <label className="block text-xs sm:text-xs md:text-sm font-semibold text-gray-700 mb-1 sm:mb-2 md:mb-3">
               <Star className="inline h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2 text-red-500" />
               Phone Number *
             </label>
@@ -376,7 +376,7 @@ function BookingForm({ onSubmit }) {
               }}
             />
             {errors.phoneNumber && (
-              <p className="mt-1 sm:mt-2 md:mt-3 text-xs sm:text-sm text-red-600 flex items-center">
+              <p className="mt-1 sm:mt-1 md:mt-2 text-xs sm:text-xs text-red-600 flex items-center">
                 <span className="mr-1 sm:mr-2">⚠</span>
                 {errors.phoneNumber.message}
               </p>
@@ -387,37 +387,37 @@ function BookingForm({ onSubmit }) {
       </div>
 
       {/* Booth Selection Section */}
-      <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-4 sm:p-6 md:p-8 lg:p-12 border border-purple-200 flex-shrink-0">
-        <div className="mb-4 sm:mb-6 md:mb-8">
-          <h4 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-2 sm:mb-3 flex items-center">
-            <Package className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 mr-2 sm:mr-3 md:mr-4 text-purple-600" />
+      <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-2 sm:p-3 md:p-4 lg:p-6 border border-purple-200 flex-shrink-0">
+        <div className="mb-2 sm:mb-3 md:mb-4">
+          <h4 className="text-sm sm:text-lg md:text-xl font-bold text-gray-900 mb-1 sm:mb-2 flex items-center">
+            <Package className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 mr-2 sm:mr-3 md:mr-4 text-purple-600" />
             Booth Selection *
           </h4>
-          <p className="text-gray-600 text-xs sm:text-sm md:text-base leading-relaxed">Choose the perfect booth type for your exhibition needs</p>
+          <p className="text-gray-600 text-xs sm:text-xs md:text-sm leading-relaxed">Choose the perfect booth type for your exhibition needs</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3 md:gap-4">
           {boothTypes.map((type) => (
             <div
               key={type.value}
               className={`booth-option ${selectedBoothType === type.value ? 'selected' : ''} ${errors.boothType && !selectedBoothType ? 'border-red-500' : ''}`}
               onClick={() => handleBoothSelection(type.value)}
             >
-              <div className="flex items-start justify-between mb-3 sm:mb-4 md:mb-6">
+              <div className="flex items-start justify-between mb-2 sm:mb-3 md:mb-4">
                 <div className="flex items-center space-x-2 sm:space-x-3 md:space-x-4">
                   <div className={`booth-checkbox ${selectedBoothType === type.value ? 'selected' : ''}`}>
                     {selectedBoothType === type.value && (
                       <div className="booth-checkbox-dot"></div>
                     )}
                   </div>
-                  <h5 className="font-bold text-gray-900 text-sm sm:text-base md:text-lg lg:text-xl">{type.label}</h5>
+                  <h5 className="font-bold text-gray-900 text-xs sm:text-sm md:text-base lg:text-lg">{type.label}</h5>
                 </div>
-                <span className="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-indigo-600">{type.price}</span>
+                <span className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-indigo-600">{type.price}</span>
               </div>
-              <p className="text-gray-600 mb-3 sm:mb-4 md:mb-6 text-xs sm:text-sm md:text-base leading-relaxed">{type.description}</p>
-              <div className="space-y-1 sm:space-y-2 md:space-y-3">
+              <p className="text-gray-600 mb-2 sm:mb-3 md:mb-4 text-xs sm:text-xs md:text-sm leading-relaxed">{type.description}</p>
+              <div className="space-y-1 sm:space-y-1 md:space-y-2">
                 {type.features.map((feature, index) => (
-                  <div key={index} className="flex items-center text-xs sm:text-sm md:text-base text-gray-700">
-                    <CheckCircle className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-green-500 mr-1 sm:mr-2 md:mr-3" />
+                  <div key={index} className="flex items-center text-xs sm:text-xs md:text-sm text-gray-700">
+                    <CheckCircle className="h-3 w-3 sm:h-4 sm:w-4 md:h-4 md:w-4 text-green-500 mr-1 sm:mr-2 md:mr-3" />
                     {feature}
                   </div>
                 ))}
@@ -427,7 +427,7 @@ function BookingForm({ onSubmit }) {
           ))}
         </div>
         {errors.boothType && (
-          <p className="mt-3 sm:mt-4 text-xs sm:text-sm text-red-600 flex items-center">
+          <p className="mt-2 sm:mt-3 text-xs sm:text-xs text-red-600 flex items-center">
             <span className="mr-1 sm:mr-2">⚠</span>
             {errors.boothType.message}
           </p>
@@ -435,17 +435,17 @@ function BookingForm({ onSubmit }) {
       </div>
 
       {/* Booking Details Section */}
-      <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-4 sm:p-6 md:p-8 lg:p-12 border border-blue-200 flex-shrink-0">
-        <div className="mb-4 sm:mb-6 md:mb-8">
-          <h4 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-2 sm:mb-3 flex items-center">
-            <MapPin className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 mr-2 sm:mr-3 md:mr-4 text-blue-600" />
+      <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-2 sm:p-3 md:p-4 lg:p-6 border border-blue-200 flex-shrink-0">
+        <div className="mb-2 sm:mb-3 md:mb-4">
+          <h4 className="text-sm sm:text-lg md:text-xl font-bold text-gray-900 mb-1 sm:mb-2 flex items-center">
+            <MapPin className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 mr-2 sm:mr-3 md:mr-4 text-blue-600" />
             Booking Details
           </h4>
-          <p className="text-gray-600 text-xs sm:text-sm md:text-base leading-relaxed">Specify your booth requirements and preferences</p>
+          <p className="text-gray-600 text-xs sm:text-xs md:text-sm leading-relaxed">Specify your booth requirements and preferences</p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 sm:gap-3 md:gap-4">
           <div>
-            <label className="block text-xs sm:text-sm md:text-base font-semibold text-gray-700 mb-2 sm:mb-3 md:mb-4">
+            <label className="block text-xs sm:text-xs md:text-sm font-semibold text-gray-700 mb-1 sm:mb-2 md:mb-3">
               <Star className="inline h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2 text-red-500" />
               <Hash className="inline h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 mr-1 sm:mr-2 md:mr-3" />
               Number of Booths *
@@ -458,14 +458,14 @@ function BookingForm({ onSubmit }) {
               min="1"
             />
             {errors.numberOfBooths && (
-              <p className="mt-1 sm:mt-2 md:mt-3 text-xs sm:text-sm text-red-600 flex items-center">
+              <p className="mt-1 sm:mt-1 md:mt-2 text-xs sm:text-xs text-red-600 flex items-center">
                 <span className="mr-1 sm:mr-2">⚠</span>
                 {errors.numberOfBooths.message}
               </p>
             )}
           </div>
           <div>
-            <label className="block text-xs sm:text-sm md:text-base font-semibold text-gray-700 mb-2 sm:mb-3 md:mb-4">
+            <label className="block text-xs sm:text-xs md:text-sm font-semibold text-gray-700 mb-1 sm:mb-2 md:mb-3">
               <Star className="inline h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2 text-red-500" />
               <MapPin className="inline h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 mr-1 sm:mr-2 md:mr-3" />
               Preferred Booth Location *
@@ -480,7 +480,7 @@ function BookingForm({ onSubmit }) {
               ))}
             </select>
             {errors.preferredLocation && (
-              <p className="mt-1 sm:mt-2 md:mt-3 text-xs sm:text-sm text-red-600 flex items-center">
+              <p className="mt-1 sm:mt-1 md:mt-2 text-xs sm:text-xs text-red-600 flex items-center">
                 <span className="mr-1 sm:mr-2">⚠</span>
                 {errors.preferredLocation.message}
               </p>
@@ -491,60 +491,60 @@ function BookingForm({ onSubmit }) {
 
       {/* Cost Summary Section */}
       {selectedBoothType && numberOfBooths && (
-        <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-2xl p-4 sm:p-6 md:p-8 lg:p-12 border border-yellow-200 flex-shrink-0">
-          <div className="mb-4 sm:mb-6 md:mb-8">
-            <h4 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-2 sm:mb-3 flex items-center">
-              <CreditCard className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 mr-2 sm:mr-3 md:mr-4 text-yellow-600" />
+        <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-2xl p-2 sm:p-3 md:p-4 lg:p-6 border border-yellow-200 flex-shrink-0">
+          <div className="mb-2 sm:mb-3 md:mb-4">
+            <h4 className="text-sm sm:text-lg md:text-xl font-bold text-gray-900 mb-1 sm:mb-2 flex items-center">
+              <CreditCard className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 mr-2 sm:mr-3 md:mr-4 text-yellow-600" />
               Cost Summary
             </h4>
-            <p className="text-gray-600 text-xs sm:text-sm md:text-base leading-relaxed">Review your booking costs and details</p>
+            <p className="text-gray-600 text-xs sm:text-xs md:text-sm leading-relaxed">Review your booking costs and details</p>
           </div>
-          <div className="bg-gradient-to-r from-indigo-50 to-purple-50 border border-indigo-200 rounded-2xl p-4 sm:p-6 md:p-8 lg:p-10">
+          <div className="bg-gradient-to-r from-indigo-50 to-purple-50 border border-indigo-200 rounded-2xl p-2 sm:p-3 md:p-4 lg:p-5">
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-3 sm:space-y-0">
-              <div>
-                <span className="text-gray-700 text-sm sm:text-base md:text-lg lg:text-xl font-semibold">
-                  {boothTypes.find(t => t.value === selectedBoothType)?.label} × {numberOfBooths} booth(s)
-                </span>
-                <p className="text-gray-500 mt-1 sm:mt-2 text-xs sm:text-sm md:text-base">Includes all standard amenities</p>
-              </div>
-              <div className="text-right">
-                <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-indigo-600">
-                  {selectedBoothType === 'custom' 
-                    ? 'Contact for pricing'
-                    : (() => {
-                        const boothType = boothTypes.find(t => t.value === selectedBoothType);
-                        if (boothType) {
-                          const price = parseInt(boothType.price.replace(/[$,]/g, ''));
-                          const total = price * numberOfBooths;
-                          return `$${total.toLocaleString()}`;
-                        }
-                        return 'Contact for pricing';
-                      })()}
-                </span>
-                {selectedBoothType !== 'custom' && (
-                  <p className="text-gray-500 mt-1 sm:mt-2 text-xs sm:text-sm md:text-base">Total amount</p>
-                )}
-              </div>
+                              <div>
+                  <span className="text-gray-700 text-xs sm:text-sm md:text-base lg:text-lg font-semibold">
+                    {boothTypes.find(t => t.value === selectedBoothType)?.label} × {numberOfBooths} booth(s)
+                  </span>
+                  <p className="text-gray-500 mt-1 sm:mt-1 text-xs sm:text-xs md:text-sm">Includes all standard amenities</p>
+                </div>
+                <div className="text-right">
+                  <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-indigo-600">
+                    {selectedBoothType === 'custom' 
+                      ? 'Contact for pricing'
+                      : (() => {
+                          const boothType = boothTypes.find(t => t.value === selectedBoothType);
+                          if (boothType) {
+                            const price = parseInt(boothType.price.replace(/[$,]/g, ''));
+                            const total = price * numberOfBooths;
+                            return `$${total.toLocaleString()}`;
+                          }
+                          return 'Contact for pricing';
+                        })()}
+                  </span>
+                  {selectedBoothType !== 'custom' && (
+                    <p className="text-gray-500 mt-1 sm:mt-1 text-xs sm:text-xs md:text-sm">Total amount</p>
+                  )}
+                </div>
             </div>
           </div>
         </div>
       )}
 
       {/* Submit Button Section */}
-      <div className="flex justify-center pt-4 sm:pt-6 md:pt-8">
+      <div className="flex justify-center pt-2 sm:pt-3 md:pt-4">
         <button
           type="submit"
           disabled={isSubmitting}
-          className="btn-primary text-sm sm:text-base md:text-lg lg:text-xl px-6 sm:px-8 md:px-12 lg:px-16 py-3 sm:py-4 md:py-5 lg:py-6 disabled:opacity-50 disabled:cursor-not-allowed flex items-center space-x-2 sm:space-x-3 md:space-x-4"
+          className="btn-primary text-xs sm:text-sm md:text-base lg:text-lg px-3 sm:px-4 md:px-6 lg:px-8 py-2 sm:py-3 md:py-4 lg:py-5 disabled:opacity-50 disabled:cursor-not-allowed flex items-center space-x-2 sm:space-x-3 md:space-x-4"
         >
           {isSubmitting ? (
             <>
-              <div className="animate-spin rounded-full h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 border-b-2 border-white"></div>
+              <div className="animate-spin rounded-full h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 border-b-2 border-white"></div>
               <span>Processing...</span>
             </>
           ) : (
             <>
-              <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6" />
+              <CheckCircle className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5" />
               <span>Submit Booking</span>
             </>
           )}
@@ -553,12 +553,12 @@ function BookingForm({ onSubmit }) {
 
       {/* Submission Error Display */}
       {submissionError && (
-        <div className="bg-red-50 border border-red-200 rounded-xl p-4 sm:p-6 md:p-8 mb-4 sm:mb-6 md:mb-8">
-          <div className="flex items-start space-x-3 sm:space-x-4">
-            <AlertCircle className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 text-red-500 flex-shrink-0 mt-0.5" />
+        <div className="bg-red-50 border border-red-200 rounded-xl p-2 sm:p-3 md:p-4 mb-2 sm:mb-3 md:mb-4">
+          <div className="flex items-start space-x-2 sm:space-x-3">
+            <AlertCircle className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-red-500 flex-shrink-0 mt-0.5" />
             <div className="flex-1">
-              <h4 className="text-sm sm:text-base md:text-lg font-semibold text-red-800 mb-2">Validation Errors</h4>
-              <div className="text-xs sm:text-sm md:text-base text-red-700 leading-relaxed">
+              <h4 className="text-xs sm:text-sm md:text-base font-semibold text-red-800 mb-1">Validation Errors</h4>
+              <div className="text-xs sm:text-xs md:text-sm text-red-700 leading-relaxed">
                 {submissionError.includes('\n') ? (
                   <div className="space-y-1">
                     {submissionError.split('\n').map((line, index) => (
@@ -586,12 +586,12 @@ function BookingForm({ onSubmit }) {
 
       {/* Submission Success Display */}
       {submissionSuccess && (
-        <div className="bg-green-50 border border-green-200 rounded-xl p-4 sm:p-6 md:p-8 mb-4 sm:mb-6 md:mb-8">
-          <div className="flex items-start space-x-3 sm:space-x-4">
-            <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 text-green-500 flex-shrink-0 mt-0.5" />
+        <div className="bg-green-50 border border-green-200 rounded-xl p-2 sm:p-3 md:p-4 mb-2 sm:mb-3 md:mb-4">
+          <div className="flex items-start space-x-2 sm:space-x-3">
+            <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-green-500 flex-shrink-0 mt-0.5" />
             <div className="flex-1">
-              <h4 className="text-sm sm:text-base md:text-lg font-semibold text-green-800 mb-2">Booking Successful!</h4>
-              <p className="text-xs sm:text-sm md:text-base text-green-700 leading-relaxed">Your booking has been submitted successfully. We will contact you shortly for confirmation.</p>
+              <h4 className="text-xs sm:text-sm md:text-base font-semibold text-green-800 mb-1">Booking Successful!</h4>
+              <p className="text-xs sm:text-xs md:text-sm text-green-700 leading-relaxed">Your booking has been submitted successfully. We will contact you shortly for confirmation.</p>
             </div>
             <button 
               onClick={() => setSubmissionSuccess(false)}
